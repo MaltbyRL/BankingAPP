@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" class="style">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container one">
+
+    <div class="row">
+      <div class="topHeader col-xs-12"></div>
+    </div>
+
+    <div class="row">
+      <div class="form" required>
+        <div class="header tName col-xs-3">
+        <input type="text" placeholder="Name" id="name">
+        </div>
+        <div class="header amount col-xs-3">
+          <input type="number" placeholder="Amount" id="amount">
+        </div>
+        <div class="header col-xs-3">
+          <input type="text" placeholder="Comment" id="comment">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="header col-xs-3">
+        <button class="btn" id="sendBTN">Deposit</button>
+      </div>
+      <div class="header col-xs-3">
+        <button class = "btn" id="drawBTN">Withdraw</button>
+      </div>
+      <select name="menu" id="menu">
+        <option value="filter">Filter</option>
+        <option value="remove">Remove</option>
+      </select>
+
+    </div>
+
+    <div class="row">
+      <table class="table table-striped">
+        <thead>
+          <tr class ="tableRow">
+            <th class="col-xs-2">Name</th>
+            <th class="col-xs-2">Amount</th>
+            <th class="col-xs-3">Comment</th>
+            <th class="col-xs-2">Date</th>
+            <th class="col-xs-2">Balance</th>
+          </tr>
+        </thead>
+        <tbody class="tableBody">
+          <tr class="template">
+            <td class="name col-xs-2"></td>
+            <td class="amount col-xs-2"></td>
+            <td class="comment col-xs-3"></td>
+            <td class="date col-xs-2"></td>
+            <td class="balance col-xs-2"></td>
+            <th class="col-xs-1"> <input type="checkbox" class="checkbox"> </th>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+
+
+
+  <script src="http://momentjs.com/downloads/moment.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./main.js"></script>
+</body>
+</html>

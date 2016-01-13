@@ -1,0 +1,71 @@
+body {
+  margin: 20px;
+}
+
+.topHeader{
+  width:100vw;
+  height: 5vw;
+}
+
+.container.one{
+  /*height: 11vw;*/
+  width: 90vw;
+  border: 6px solid black;
+  background-image: url("http://www.wallconvert.com/wallpapers/photography/gold-coins-31825.html");
+  font-size: 2vw;
+  float: left;
+}
+#sendBTN{
+  background-color: green;
+}
+/*.table{
+  height: 100vw;
+  width: 90vw;
+  border: 1px solid black;
+  background-color: grey;
+  font-size: 2vw;
+  float: left;
+  padding: 15px;
+  margin-left: 15px;
+
+}*/
+/*thead {
+  vertical-align: middle;
+  height: 7vw;
+  width: 90vw;
+  border: 1px solid black;
+  background-color: grey;
+  font-size: 3vw;
+  float: left;
+}*/
+
+/*STYLING FOR HEADER*/
+/*.tableRow{
+  vertical-align: middle;
+}*/
+tbody {
+  height: 100vw;
+  width: 90vw;
+  /*border: 1px solid black;*/
+  background-color: grey;
+  font-size: 3vw;
+  /*float: left;*/
+}
+
+/*th{
+  border: 1px solid black;
+
+}
+tr{
+  vertical-align: middle;
+  height: 4vw;
+  width: 90vw;
+  border: 1px solid black;
+  background-color: grey;
+  font-size: 2vw;
+  float: left;
+}*/
+
+.template {
+  display: none;
+}
