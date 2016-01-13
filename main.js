@@ -8,9 +8,13 @@ var name;
 function init() {
   $('#sendBTN').on("click", sendBTN);
   $("#drawBTN").on('click', drawBTN);
+  $('table').on('click', ".dltBTN" ,checkClicked)
 
 }
 
+function checkClicked(){
+  $(this).parent().parent().parent().remove()
+}
 
 function getData() {
   // var cents = $('#cents').val();
@@ -24,7 +28,7 @@ function sendBTN(){
   console.log('Amount:', amount);
   balance = (Number(balance) + Number(amount)).toFixed([2]);
   colorMoney = 'green';
-  sendData();
+  newRowCell();
 }
 
 function drawBTN(){
@@ -34,13 +38,13 @@ function drawBTN(){
   console.log('Amount:', amount);
   balance = (Number(balance) + Number(amount)).toFixed([2]);
   colorMoney = 'red';
-  sendData();
+  newRowCell();
 }
 
 
 
 
-function sendData(){
+function newRowCell(){
 
   event.preventDefault();
 
@@ -59,5 +63,8 @@ function sendData(){
   $row.children('.date').text(date);
   $row.children('.amount').text("$" + amount );
   $(".tableBody").prepend($row);
+  $('#name').val('')
+  $('#amount').val('')
+  $('#comment').val('')
 
 }
