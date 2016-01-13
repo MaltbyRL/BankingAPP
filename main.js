@@ -22,6 +22,7 @@ function getData() {
 }
 
 
+
 function sendBTN(){
   amount = $('#amount').val();
   amount = (+amount).toFixed([2])
